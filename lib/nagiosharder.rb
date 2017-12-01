@@ -32,7 +32,7 @@ class NagiosHarder
       @nagios_url = nagios_url.gsub(/\/$/, '')
       @user = user
       @password = password
-      @default_options = {:verify => ssl_verify, :ssl_version => :SSLv3}
+      @default_options = {:verify => ssl_verify, :ssl_version => :TLSv1}
       @default_cookies = {}
       @version = version
       debug_output if ENV['DEBUG']
